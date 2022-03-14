@@ -5,4 +5,12 @@ html(lang="en")
   include pug/_head
   body 
     include pug/header
+    main.main.bg-img
+      div.card
+        h2.card__title.h1 Найдём номера под ваши пожелания
+        +input({id: 'from', name: 'Прибытие', placeholder: 'ДД.ММ.ГГГГ'})
+      p.on-bg-img.text
+        |Лучшие номера для вашей работы,
+        br
+        |отдыха и просто вдохновения
     include pug/footer
