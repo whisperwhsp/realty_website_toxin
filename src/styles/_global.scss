@@ -1,0 +1,60 @@
+@use 'colors';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: textFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+a {
+  cursor: pointer;
+}
+.text {
+  font-family: textFont;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.h1 {
+  font-family: headersFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: colors.$dark100;
+}
+.h2 {
+  font-family: headersFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  color: colors.$dark100;
+
+}
+.h3 {
+  font-family: headersFont;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: colors.$dark100;
+  text-transform: uppercase;
+
+}
+.va {
+  display: flex;
+  margin: auto;
+}
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+

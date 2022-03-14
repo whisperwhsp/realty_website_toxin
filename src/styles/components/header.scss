@@ -1,0 +1,43 @@
+@use '../colors';
+.header {
+  max-height: 70px;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  & img:last-child {
+    margin-left: 12.5px;
+  }
+}
+.header__right-part {
+  display: flex;
+  & div {
+    margin-left: 20px;
+  }
+}
+.navigation {
+  display: flex;
+}
+.navbar__ul {
+  display: flex;
+  list-style: none;
+  color: colors.$dark50;
+}
+
+.navbar__item {
+  margin: 0 10px;
+  display: flex;
+  & .va {
+    margin-left: 5px;
+  }
+}
+
+.active {
+  font-family: headersFont;
+  color: colors.$dark100;
+}
+

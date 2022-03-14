@@ -1,0 +1,26 @@
+@use '../colors';
+
+.footer {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__part {
+    margin-top: 104px;
+    & p {
+      margin-top: 20px;
+    }
+    & h3 {
+      margin-bottom: 21px;
+    }
+    & ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: colors.$dark50;
+      & li {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
