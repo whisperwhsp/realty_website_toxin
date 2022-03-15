@@ -1,7 +1,7 @@
 @use '../colors';
 
 .footer {
-  &__container {
+  &-top__container {
     display: flex;
     justify-content: space-between;
   }
@@ -22,5 +22,9 @@
         margin-bottom: 20px;
       }
     }
+  }
+  &-bottom__container {
+    display: flex;
+    justify-content: space-between;
   }
 }

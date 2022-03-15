@@ -39,11 +39,23 @@ module.exports = {
         loader: "html-loader", 
       },
 
+      // {
+      //   test: /\.(jpg|png|svg)$/,
+      //   use: {
+      //     loader: 'url-loader',
+      //   },
+      // },
+
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
           (mode === 'development') ? "style-loader" : MiniCSSExtractPlugin.loader,
-          "css-loader",
+          {
+            loader: "css-loader", 
+            options: {
+              url: false,
+            }
+          },
           { loader: "postcss-loader",
             options: {
               postcssOptions: {
@@ -94,6 +106,7 @@ module.exports = {
   output: {
     filename: 'bundle.[contenthash].js',
     assetModuleFilename: "assets/[name][ext]",
-    clean: false,
+    path: __dirname + "/dist",
+    clean: true,
   }
 }

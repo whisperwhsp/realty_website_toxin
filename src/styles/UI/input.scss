@@ -5,7 +5,13 @@
   width: 260px;
   border-radius: 4px;
   border: 1px solid colors.$dark25;
-  padding-left: 15px;
+  padding: 0 15px;
+  background-image: url(../../images/UI/arrow_right.svg);
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+
   &::placeholder {
     color: colors.$dark25;
   }

@@ -70,6 +70,17 @@ label {
 .container {
   margin: 0 10%;
 }
+.instagram {
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/social_links/instagram.svg');
+}
+.twitter {
+  background-image: url('../images/social_links/twitter.svg');
+}
+.facebook {
+  background-image: url('../images/social_links/facebook.svg');
+}
 // FIXME: исправить отображение фонового изображения
 .bg-img {
   background: url('./../images/index.jpg');

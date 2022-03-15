@@ -1,3 +1,11 @@
-mixin input({id, name, placeholder})
-  label.h3(for=`${id}`)= name
-  input.input-large(type="text" id=`${id}` placeholder=`${placeholder}`)
+//- mixin arrowright_purple()
+
+mixin input({id, name, placeholder, withArrow})
+  if withArrow
+    label.h3(for=`${id}`)= name
+    div(style="position:relative")
+      input.input-large(type="text" id=`${id}` placeholder=`${placeholder}`)
+      //- +arrowright_purple()
+  else 
+    label.h3(for=`${id}`)= name
+    input.input-large(type="text" id=`${id}` placeholder=`${placeholder}`) 

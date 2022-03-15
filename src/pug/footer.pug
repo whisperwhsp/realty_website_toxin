@@ -1,5 +1,5 @@
 footer.footer
-  .container.footer__container
+  .container.footer-top__container
     .footer__part
       .logo
         +logo()
@@ -37,4 +37,14 @@ footer.footer
         br 
         |предложения и новости сервиса
       form.footer__form
-        input.input-large(type="email" placeholder="Email")
+        +input({id: 'email', name: '', placeholder: 'Email', withArrow: 'yes'})
+  .container.footer-bottom__container
+      p Copyright © 2018 Toxin отель. Все права защищены.
+      ul 
+        li 
+          a
+            +image('social_links/facebook.svg', 'facebook')
+        li 
+          a
+        li 
+          a
