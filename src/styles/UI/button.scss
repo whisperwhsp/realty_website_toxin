@@ -6,24 +6,34 @@
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border: none;
   padding: 10px 20px;
-  transition: all 0.3s;
   cursor: pointer;
-}
-.btn:hover {
-  opacity: 0.5;
-}
-
-.btn--outline {
-  color: colors.$purple;
-  background: linear-gradient(#fff, #fff) padding-box,
-    linear-gradient(to right, #BC9CFF 0%, #8BA4F9 100%) border-box;
-  border: 2px solid transparent;
-  border-radius: 22px;
-  padding: 10px 20px;
-  cursor: pointer;
+  text-transform: uppercase;
   transition: all 0.3s;
-
-}
-.btn--outline:hover {
-  opacity: 0.5;
+  &--large {
+    display: block;
+    width: 100%;
+    position: relative;
+    & svg {
+      position: absolute;
+      right: 0;
+      margin-right: 5%;
+    }
+  }
+  &--outline {
+    color: colors.$purple;
+    background: linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(to right, #BC9CFF 0%, #8BA4F9 100%) border-box;
+    border: 2px solid transparent;
+    border-radius: 22px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  &:hover {
+    opacity: 0.5;
+  }
 }

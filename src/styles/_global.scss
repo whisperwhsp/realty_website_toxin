@@ -20,6 +20,7 @@ input, label {
 }
 label {
   margin-bottom: 5px;
+  text-transform: uppercase;
 }
 .text {
   font-family: textFont;
@@ -61,6 +62,11 @@ label {
   display: flex;
   margin: auto;
 }
+
+.block {
+  display: block;
+}
+
 .container {
   margin: 0 10%;
 }

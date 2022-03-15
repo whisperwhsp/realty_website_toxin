@@ -1,10 +1,9 @@
 header.header
   .container.header__container
-    div.header__left-part.logo
-      img(src=require('../images/brand/Group.svg'), alt="")
-      img(src=require('../images/brand/TOXIN.svg'), alt="")
-    div.header__right-part
-      div.navigation
+    .header__left-part.logo
+      +logo()
+    .header__right-part
+      .navigation
         nav.navbar
           ul.navbar__ul
             li.navbar__item.active
@@ -12,7 +11,7 @@ header.header
             li.navbar__item
               a Услуги
               .va
-                img(src=require('../images/UI/arrow_down.svg'), alt="")
+                +arrowdown()
             li.navbar__item 
               a Вакансии
             li.navbar__item
@@ -20,8 +19,8 @@ header.header
             li.navbar__item 
               a Соглашения
               .va
-                img(src=require('../images/UI/arrow_down.svg'), alt="")
-      div.va
-        button.btn--outline.h3 Войти
-      div.va
-        button.btn.h3 Зарегистрироваться
+               +arrowdown()
+      .va
+        +button('войти', 'btn--outline')
+      .va
+        +button('зарегистрироваться', 'btn')

@@ -1,4 +1,4 @@
-include pug/libs/_libs
+include pug/UI/_libs
 
 doctype html
 html(lang="en")
@@ -6,9 +6,7 @@ html(lang="en")
   body 
     include pug/header
     main.main.bg-img
-      div.card
-        h2.card__title.h1 Найдём номера под ваши пожелания
-        +input({id: 'from', name: 'Прибытие', placeholder: 'ДД.ММ.ГГГГ'})
+      include pug/cardFindARoom
       p.on-bg-img.text
         |Лучшие номера для вашей работы,
         br

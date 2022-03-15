@@ -1,13 +1,23 @@
-@use '../colors';
+@use '../colors.scss';
 
-.input-large {
+.dropdown {
   height: 44px;
-  width: 260px;
+  width: 150px;
+  background-color: #fff;
   border-radius: 4px;
   border: 1px solid colors.$dark25;
   padding-left: 15px;
-  &::placeholder {
-    color: colors.$dark25;
+  color: colors.$dark75;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  &-large {
+    display: flex;
+    width: 100%;
+  }
+  & img {
+    margin-right: 10px;
   }
   &:hover {
     color: colors.$dark75;

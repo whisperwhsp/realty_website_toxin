@@ -1,10 +1,20 @@
 .card {
-  position: absolute;
   width: 380px;
   height: 374px;
   background-color:#fff;
-  margin: 5% 0 0 10%;
+  padding: 40px 30px 30px;
   &__title {
-    margin: 30px 40px 0;
+    margin-bottom: 21px;
+  }
+  &__select-dates {
+    margin-bottom: 21px;
+    justify-content: space-between;
+  }
+  &__select-guests {
+    margin-bottom: 31px;
+  }
+  &--absolute {
+    position: absolute;
+    margin: 5% 0 0 10%;
   }
 }

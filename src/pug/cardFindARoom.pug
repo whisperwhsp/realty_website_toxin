@@ -1,0 +1,12 @@
+.card.card--absolute
+  form(action="", method="get") 
+    h2.card__title.h1 Найдём номера под ваши пожелания
+    .va.card__select-dates
+      .block
+        +dropdown('прибытие', 'ДД.ММ.ГГГГ')
+      .block
+        +dropdown('выезд', 'ДД.ММ.ГГГГ')
+    .block.card__select-guests
+      +dropdown('выезд', 'Сколько гостей', 'large')
+    .block
+      +button('подобрать номер', 'btn--large')
