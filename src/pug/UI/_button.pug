@@ -3,10 +3,12 @@ mixin arrowright()
     path(d="M9 0.984375L17.0156 9L9 17.0156L7.59375 15.6094L13.1719 9.98438H0.984375V8.01562H13.1719L7.59375 2.39062L9 0.984375Z" fill="white")
 
 mixin button(text, classname)
-  if classname === 'btn--large'
-    button.btn.btn--large.h3= text
-      +arrowright()
-  else if classname === 'btn' 
+  if classname === 'btn'
     button.btn.h3= text
+  else if classname === 'btn--large'
+    button.btn.btn--bg.btn--large.h3= text
+      +arrowright()
   else if classname === 'btn--outline'
-    button.btn--outline.h3= text
+    button.btn.btn--outline.h3= text
+  else if classname === 'btn--bg'
+    button.btn.btn--bg.h3= text
